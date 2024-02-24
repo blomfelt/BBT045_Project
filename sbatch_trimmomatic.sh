@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #SBATCH -A C3SE2023-2-17 -p vera
-#SBATCH -n 8
+#SBATCH -n 4
 #SBATCH -t 15:00:00
 #SBATCH -J trimmomatic
 #SBATCH --mail-user=blfelix@student.chalmers.se
@@ -50,7 +50,7 @@ mkdir $WORKING_TMP;
 cd $WORKING_TMP;
 
 # This is a good place to copy files to the working directory on the compute node, if needed for the script. It is not needed in this example, so this is commented out.
-cp /cephyr/NOBACKUP/groups/bbt045_2024/PROJECT_DATA/*.fastq.gz $WORKING_TMP
+cp /cephyr/NOBACKUP/groups/bbt045_2024/PROJECT_DATA/*2011*.fastq.gz $WORKING_TMP
 
 #----------------------------------------------------------------------------------------------------
 #ÄNDRA DETTA TILL ETT SAMPLE OCH SE HUR LÅNG TID DET TAR OCH OM DET FUNKAR??
@@ -61,7 +61,7 @@ cp /cephyr/NOBACKUP/groups/bbt045_2024/PROJECT_DATA/*.fastq.gz $WORKING_TMP
 ### Running Trimmomatic
 for file in `ls *_1.fastq.gz  | grep -v "_lake_" | sed "s/_1.fastq.gz//"`
 do
-    apptainer exec $CONTAINER_LOC trimmomatic PE -trimlog $file\_trimmomatic_log.txt \
+    apptainer exec $CONTAINER_LOC trimmomatic PE -phred64 \
                     $file\_1.fastq.gz $file\_2.fastq.gz \
                     $file\_1.trimmed.fastq.gz $file\_1.un.trimmed.fastq.gz \
                     $file\_2.trimmed.fastq.gz $file\_2.un.trimmed.fastq.gz \
