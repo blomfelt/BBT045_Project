@@ -5,7 +5,7 @@
 #SBATCH -C MEM512
 #SBATCH -t 24:00:00
 #SBATCH -J metaphlan
-#SBATCH --mail-user=<WRITE YOUR CHALMERS EMAIL HERE>
+#SBATCH --mail-user=blfelix@student.chalmers.se
 #SBATCH --mail-type=ALL
 # Set the names for the error and output files
 #SBATCH --error=job.%J.err
