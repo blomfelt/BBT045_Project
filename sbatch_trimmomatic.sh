@@ -32,7 +32,6 @@
 # CORRECT THIS FILE PATH AS YOU NEED
 WORKDIR=/cephyr/NOBACKUP/groups/bbt045_2024/project_group1/results/trimmomatic;
 
-# files used
 # location of the container
 CONTAINER_LOC=/cephyr/NOBACKUP/groups/bbt045_2024/ProjectSoftware/bbt045-projects.sif;
 
@@ -53,27 +52,29 @@ cd $WORKING_TMP;
 # This is a good place to copy files to the working directory on the compute node, if needed for the script. It is not needed in this example, so this is commented out.
 cp /cephyr/NOBACKUP/groups/bbt045_2024/PROJECT_DATA/*.fastq.gz $WORKING_TMP
 
-----------------------------------------------------------------------------------------------------
-ÄNDRA DETTA TILL EN FIL OCH SE HUR LÅNG TID DET TAR OCH OM DET FUNKAR??
-----------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------
+#ÄNDRA DETTA TILL ETT SAMPLE OCH SE HUR LÅNG TID DET TAR OCH OM DET FUNKAR??
+#T.EX: 1.5km_2012_*.fastq.gz
+#----------------------------------------------------------------------------------------------------
 
 
 ### Running Trimmomatic
-# Possible to test this in jupyter using the commented `echo` part of the loop instead of the `apptainer` part 
-
-for file in `ls *_1.fastq.gz  | grep -v "_lake_" | sed "s/2011_1.fastq.gz//"`
+for file in `ls *_1.fastq.gz  | grep -v "_lake_" | sed "s/_1.fastq.gz//"`
 do
-    apptainer exec $CONTAINER_LOC trimmomatic PE -threads 8 -phred64 -trimlog $file\_trimmomatic_log.txt \
+    apptainer exec $CONTAINER_LOC trimmomatic PE -trimlog $file\_trimmomatic_log.txt \
                     $file\_1.fastq.gz $file\_2.fastq.gz \
-                    $file\_1.trimmed.gz $file\_1.untrimmed.gz \
-                    $file\_2.trimmed.gz $file\_2.untrimmed.gz \
-                    LEADING:20 TRAILING:20 \
+                    $file\_1.trimmed.fastq.gz $file\_1.un.trimmed.fastq.gz \
+                    $file\_2.trimmed.fastq.gz $file\_2.un.trimmed.fastq.gz \
+                    TOPHRED33 \
+                    LEADING:30 TRAILING:30 \
                     MINLEN:60
 done
 
-----------------------------------------------------------------------------------------------------
-SAMMA SAK FÖR 2012-datan FAST ÄNDRA 2011 samt phred33 -> phred64 och LEADING/TRAILING score
-----------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------
+#LEADING + TRAILING SCORE: 30? JOHAN PRATADE OM ATT HAN VILLE HA 30 MEN FICK TA 28 PÅ NÅT PROJEKT?
+#BORDE FUNKA MED TOPHRED33? ELLER SKA VI HA TOPHRED64? ALLA FRÅN 2011 ÄR I PHRED64 MEN 33 ANVÄNDS NUFÖRTIDEN
+#ÄNDRA THREADS 8? TA BORT OCH LÅTA DEN LÖSA DET? ANVÄNDE BARA 2 VERKAR DET SOM
+#----------------------------------------------------------------------------------------------------
 
 #for i in `ls /cephyr/NOBACKUP/groups/bbt045_2024/PROJECT_DATA/*_1.fastq.gz | sed "s/_1.fastq.gz//"`
 #do
@@ -84,9 +85,8 @@ SAMMA SAK FÖR 2012-datan FAST ÄNDRA 2011 samt phred33 -> phred64 och LEADING/T
 
 
 ### Copy relevant files back, SLURM_SUBMIT_DIR is set by SLURM
-cp $WORKING_TMP/*.trimmed.gz $WORKDIR;
-cp $WORKING_TMP/*.untrimmed.gz $WORKDIR;
-cp $WORKING_TMP/*.log.txt $WORKDIR;
+cp $WORKING_TMP/*.trimmed.fastq.gz $WORKDIR;
+cp $WORKING_TMP/*log.txt $WORKDIR;
 
 
 # Refs: 
