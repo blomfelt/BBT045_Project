@@ -3,7 +3,7 @@
 #SBATCH -A C3SE2023-2-17 -p vera
 #SBATCH -n 20
 #SBATCH -C MEM512
-#SBATCH -t 5:00:00
+#SBATCH -t 24:00:00
 #SBATCH -J metaphlan
 #SBATCH --mail-user=blfelix@student.chalmers.se
 #SBATCH --mail-type=ALL
