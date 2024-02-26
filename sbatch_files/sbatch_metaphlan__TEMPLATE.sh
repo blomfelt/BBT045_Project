@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 #SBATCH -A C3SE2023-2-17 -p vera
-#SBATCH -n 5
+#SBATCH -n 20
 #SBATCH -C MEM512
-#SBATCH -t 24:00:00
+#SBATCH -t 5:00:00
 #SBATCH -J metaphlan
 #SBATCH --mail-user=blfelix@student.chalmers.se
 #SBATCH --mail-type=ALL
@@ -31,14 +31,13 @@
 ### Set parameters
 # key directory
 # FILL IN THE PATH TO YOUR WORKING DIRECTORY
-WORKDIR=/cephyr/PATH/TO/YOUR/WORKING/DIRECTORY;
+WORKDIR=/cephyr/NOBACKUP/groups/bbt045_2024/project_group1/results/metaphlan;
 
 # files used
 # location of the container
 CONTAINER_LOC=/cephyr/NOBACKUP/groups/bbt045_2024/ProjectSoftware/bbt045-projects.sif;
 # input file
 # FILL IN THE NAME OF YOUR INPUT FASTQ
-FASTQ_FILE=<WRITE FILE NAME HERE>;
 # NOTE THAT THIS SCRIPT IS WRITTEN FOR ONE (1) FILE
 # IF YOU HAVE MULTIPLE FILES YOU MAY NEED TO WRITE A FOR LOOP
 
@@ -56,11 +55,16 @@ module purge
 mkdir $WORKING_TMP;
 cd $WORKING_TMP;
 # copy the FASTQ file to the temporary directory
-cp $WORKDIR/$FASTQ_FILE $WORKING_TMP;
-
+cp /cephyr/NOBACKUP/groups/bbt045_2024/project_group1/results/trimmomatic/*[12].trimmed.fastq.gz $WORKING_TMP;
+#downstream_1.5km_2012_[12].trimmed.fastq.gz
 
 ### Running Metaphlan
-apptainer exec $CONTAINER_LOC metaphlan $FASTQ_FILE --input_type fastq -o profiled_test.txt --nproc 4;
+for file in `ls *1.trimmed.fastq.gz | sed "s/_1.trimmed.fastq.gz//"`
+do
+    apptainer exec $CONTAINER_LOC metaphlan $file\_1.trimmed.fastq.gz,$file\_2.trimmed.fastq.gz \
+                                            --input_type fastq --nproc 16 --unclassified_estimation --bowtie2out $file.bowtie2.bz2 -o $file\_profile.txt\
+                                            
+done
 
 
 ### Copy relevant files back, SLURM_SUBMIT_DIR is set by SLURM
