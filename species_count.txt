@@ -1,0 +1,9 @@
+Sample	species_count	type	year	read_amount
+downstream_1.5km	78	downstream	2012	34776607  
+downstream_17.5km	44	downstream	2011	33575959  
+downstream_2.3km	65	downstream	2011	25647080  
+downstream_2.7km	91	downstream	2011	66647064  
+effluent_point	93	effluent	2011	24622151  
+upstream_1.9km	77	upstream	2011	52915463  
+upstream_150m	84	upstream	2012	33902189  
+upstream_2.2km	125	upstream	2011	42785617  
