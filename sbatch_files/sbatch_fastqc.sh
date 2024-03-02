@@ -13,59 +13,51 @@
 
 ###
 #
-# Title: sbatch_Trim_Galore.sh
+# Original title: sbatch_Trim_Galore.sh
+# New title: sbatch_fastqc.sh
 # Date: 2024.02.20
 # Author: Vi Varga
+# Modified by: Felix Blomfelt
 #
 # Description: 
-# This script will run IQ-TREE on C3SE Vera from the phylo-tutorial-env.sif
-# Apptainer container file, in order to phylogenetic trees.
+# This script will run fastQC on C3SE Vera from the bbt045-projects.sif
+# Apptainer container file, in order to visualize the quality of the reads.
 # 
 # Usage: 
-# sbatch sbatch_iqtree.sh
+# sbatch sbatch_fastqc.sh
 #
 ###
 
 
 ### Set parameters
-# key directory
-# CORRECT THIS FILE PATH AS YOU NEED
+# Working directory
 WORKDIR=/cephyr/NOBACKUP/groups/bbt045_2024/project_group1/results/fastqc;
 
-# location of the container
+# Location of the container
 CONTAINER_LOC=/cephyr/NOBACKUP/groups/bbt045_2024/ProjectSoftware/bbt045-projects.sif;
 
-# temp files directory variable
+# Temp files directory variable
 WORKING_TMP=$TMPDIR/TRIM_TMP;
 
 
-### Load modules
+### Purge modules
 module purge
-#module load MODULE_NAME/module.version ...;
 
-
-# Copy relevant files to $TMPDIR
 # create a temporary directory to store output files
 mkdir $WORKING_TMP;
 cd $WORKING_TMP;
 
-# This is a good place to copy files to the working directory on the compute node, if needed for the script. It is not needed in this example, so this is commented out.
-#cp /cephyr/NOBACKUP/groups/bbt045_2024/PROJECT_DATA/*.fastq.gz $WORKING_TMP
-cp /cephyr/NOBACKUP/groups/bbt045_2024/project_group1/results/trimmomatic/*.fastq.gz $WORKING_TMP
+# Copy relevant files to $TMPDIR
+# First fastQC:
+cp /cephyr/NOBACKUP/groups/bbt045_2024/PROJECT_DATA/*.fastq.gz $WORKING_TMP 
+# Second fastQC, after trimming:
+#cp /cephyr/NOBACKUP/groups/bbt045_2024/project_group1/results/trimmomatic/*.fastq.gz $WORKING_TMP
 
 ### Running fastQC
-
 for file in `ls *.fastq.gz | grep -v "_lake_"`
 do
     apptainer exec $CONTAINER_LOC fastqc $file -o $WORKING_TMP
 done
-
-#for i in `ls /cephyr/NOBACKUP/groups/bbt045_2024/PROJECT_DATA/*_1.fastq.gz | sed "s/_1.fastq.gz//"`
-#do
-#  echo "trim_galore --quality 20 --length 60 --cores 8 --paired -o /cephyr/NOBACKUP/groups/bbt045_2024/projectAliceRita5 #$i\_1.fastq.gz $i\_2.fastq.gz" 
-#  #ls $i\_1.fastq.gz $i\_2.fastq.gz
-#  apptainer exec $CONTAINER_LOC trim_galore --quality 20 --length 60 --cores 8 --paired -o #/cephyr/NOBACKUP/groups/bbt045_2024/projectAliceRita5 $i\_1.fastq.gz $i\_2.fastq.gz
-#done
 
 
 ### Copy relevant files back, SLURM_SUBMIT_DIR is set by SLURM

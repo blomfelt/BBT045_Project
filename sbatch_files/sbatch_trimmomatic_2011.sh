@@ -13,19 +13,21 @@
 
 ###
 #
-# Title: sbatch_trimmomatic.sh
+# Original title: sbatch_Trim_Galore.sh
+# New title: sbatch_trimmomatic_2011.sh
 # Date: 2024.02.20
 # Author: Vi Varga
 # Modified by: Felix Blomfelt
 #
 # Description: 
-# This script will run IQ-TREE on C3SE Vera from the phylo-tutorial-env.sif
-# Apptainer container file, in order to phylogenetic trees.
+# This script will run trimmomatic on C3SE Vera from the bbt045-projects.sif
+# Apptainer container file, in order to visualize the quality of the reads.
 # 
 # Usage: 
-# sbatch sbatch_iqtree.sh
+# sbatch sbatch_trimmomatic_2011.sh
 #
 ###
+
 
 
 ### Set parameters
