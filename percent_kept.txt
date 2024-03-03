@@ -1,0 +1,9 @@
+Sample	Both_kept
+downstream_17.5km_2011	91.6
+downstream_2.3km_2011	89.7
+downstream_2.7km_2011	90.6
+effluent_point_2011	77.3
+upstream_1.9km_2011	88.8
+upstream_2.2km_2011	90.0
+downstream_1.5km_2012	96.7
+upstream_150m_2012	93.9
