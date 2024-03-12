@@ -21,7 +21,7 @@
 #
 # Description: 
 # This script will run trimmomatic on C3SE Vera from the bbt045-projects.sif
-# Apptainer container file, in order to visualize the quality of the reads.
+# Apptainer container file, in order to trim the raw reads.
 # 
 # Usage: 
 # sbatch sbatch_trimmomatic_2012.sh
@@ -65,18 +65,7 @@ done
 
 ### Copy relevant files back, SLURM_SUBMIT_DIR is set by SLURM
 cp $WORKING_TMP/*.trimmed.fastq.gz $WORKDIR;
-cp $WORKING_TMP/*log.txt $WORKDIR;
 
 
 # Refs: 
 # C3SE container use: https://www.c3se.chalmers.se/documentation/applications/containers/
-# IQ-TREE Manual: http://www.iqtree.org/doc/iqtree-doc.pdf
-# -s is the option to specify the name of the alignment file that is always required by IQ-TREE to work.
-# -m is the option to specify the model name to use during the analysis. 
-# The special MFP key word stands for ModelFinder Plus, which tells IQ-TREE to perform ModelFinder 
-# and the remaining analysis using the selected model.
-# Here, the model to use has been pre-selected: LG+R5
-# To make this reproducible, need to use -seed option to provide a random number generator seed.
-# -wbtl Like -wbt but bootstrap trees written with branch lengths. DEFAULT: OFF
-# -T AUTO: allows IQ-TREE to auto-select the ideal number of threads
-# -ntmax: set the maximum number of threads that IQ-TREE c use

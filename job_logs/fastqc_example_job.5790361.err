@@ -1,0 +1,108 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "sv_SE.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 5% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 10% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 15% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 20% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 25% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 30% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 35% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 40% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 45% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 50% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 55% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 60% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 65% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 70% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 75% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 80% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 85% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 90% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+Approx 95% complete for downstream_1.5km_2012_1.trimmed.fastq.gz
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "sv_SE.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 5% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 10% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 15% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 20% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 25% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 30% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 35% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 40% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 45% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 50% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 55% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 60% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 65% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 70% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 75% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 80% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 85% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 90% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+Approx 95% complete for downstream_1.5km_2012_1.un.trimmed.fastq.gz
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "sv_SE.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 5% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 10% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 15% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 20% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 25% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 30% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 35% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 40% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 45% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 50% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 55% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 60% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 65% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 70% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 75% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 80% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 85% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 90% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+Approx 95% complete for downstream_1.5km_2012_2.trimmed.fastq.gz
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "sv_SE.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 5% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 10% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 15% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 20% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 25% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 30% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 35% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 40% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 45% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 50% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 55% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 60% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 65% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 70% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 75% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 80% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 85% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 90% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz
+Approx 95% complete for downstream_1.5km_2012_2.un.trimmed.fastq.gz

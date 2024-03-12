@@ -1,0 +1,11 @@
+TrimmomaticPE: Started with arguments:
+ -phred33 downstream_1.5km_2012_1.fastq.gz downstream_1.5km_2012_2.fastq.gz downstream_1.5km_2012_1.trimmed.fastq.gz downstream_1.5km_2012_1.un.trimmed.fastq.gz downstream_1.5km_2012_2.trimmed.fastq.gz downstream_1.5km_2012_2.un.trimmed.fastq.gz TOPHRED33 LEADING:30 TRAILING:30 MINLEN:60
+Multiple cores found: Using 4 threads
+Input Read Pairs: 18526883 Both Surviving: 17539276 (94.67%) Forward Only Surviving: 632626 (3.41%) Reverse Only Surviving: 238250 (1.29%) Dropped: 116731 (0.63%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -phred33 upstream_150m_2012_1.fastq.gz upstream_150m_2012_2.fastq.gz upstream_150m_2012_1.trimmed.fastq.gz upstream_150m_2012_1.un.trimmed.fastq.gz upstream_150m_2012_2.trimmed.fastq.gz upstream_150m_2012_2.un.trimmed.fastq.gz TOPHRED33 LEADING:30 TRAILING:30 MINLEN:60
+Multiple cores found: Using 4 threads
+Quality encoding detected as phred33
+Input Read Pairs: 18221502 Both Surviving: 17114431 (93.92%) Forward Only Surviving: 701330 (3.85%) Reverse Only Surviving: 268086 (1.47%) Dropped: 137655 (0.76%)
+TrimmomaticPE: Completed successfully
