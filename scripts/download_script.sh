@@ -1,0 +1,23 @@
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/004/ERR2721174/ERR2721174.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/009/ERR2721179/ERR2721179.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/000/ERR2721180/ERR2721180.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/007/ERR2721177/ERR2721177.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/002/ERR2721182/ERR2721182.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/002/ERR2721172/ERR2721172.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/003/ERR2721183/ERR2721183.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/006/ERR2721176/ERR2721176.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/009/ERR2721189/ERR2721189.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/007/ERR2721187/ERR2721187.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/005/ERR2721185/ERR2721185.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/008/ERR2721168/ERR2721168.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/000/ERR2721170/ERR2721170.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/006/ERR2721186/ERR2721186.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/005/ERR2721175/ERR2721175.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/001/ERR2721181/ERR2721181.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/008/ERR2721178/ERR2721178.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/008/ERR2721188/ERR2721188.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/004/ERR2721184/ERR2721184.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/001/ERR2721171/ERR2721171.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/009/ERR2721169/ERR2721169.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR272/003/ERR2721173/ERR2721173.fastq.gz
+

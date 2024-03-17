@@ -1,0 +1,23 @@
+mv Metagenomics3_1.fastq.gz kazipally_lake_2012_1.fastq.gz
+mv Metagenomics1_2.fastq.gz upstream_150m_2012_2.fastq.gz
+mv JL33_1.fastq.gz kazipally_lake_2011_1.fastq.gz
+mv Metagenomics2_2.fastq.gz downstream_1.5km_2012_2.fastq.gz
+mv JL28_2.fastq.gz downstream_2.7km_2011_2.fastq.gz
+mv JL27_1.fastq.gz downstream_17.5km_2011_1.fastq.gz
+mv JL32_1.fastq.gz upstream_2.2km_2011_1.fastq.gz
+mv JL29_1.fastq.gz downstream_2.3km_2011_1.fastq.gz
+mv JL31_2.fastq.gz upstream_1.9km_2011_2.fastq.gz
+mv Metagenomics4_1.fastq.gz asanikunta_lake_2012_1.fastq.gz
+mv JL31_1.fastq.gz upstream_1.9km_2011_1.fastq.gz
+mv JL32_2.fastq.gz upstream_2.2km_2011_2.fastq.gz
+mv Metagenomics1_1.fastq.gz upstream_150m_2012_1.fastq.gz
+mv JL28_1.fastq.gz downstream_2.7km_2011_1.fastq.gz
+mv JL33_2.fastq.gz kazipally_lake_2011_2.fastq.gz
+mv JL30_1.fastq.gz effluent_point_2011_1.fastq.gz
+mv JL29_2.fastq.gz downstream_2.3km_2011_2.fastq.gz
+mv JL30_2.fastq.gz effluent_point_2011_2.fastq.gz
+mv JL27_2.fastq.gz downstream_17.5km_2011_2.fastq.gz
+mv Metagenomics2_1.fastq.gz downstream_1.5km_2012_1.fastq.gz
+mv Metagenomics4_2.fastq.gz asanikunta_lake_2012_2.fastq.gz
+mv Metagenomics3_2.fastq.gz kazipally_lake_2012_2.fastq.gz
+

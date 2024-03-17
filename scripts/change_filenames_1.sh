@@ -1,0 +1,23 @@
+mv ERR2721168.fastq.gz Metagenomics3_1.fastq.gz
+mv ERR2721174.fastq.gz Metagenomics1_2.fastq.gz
+mv ERR2721179.fastq.gz JL33_1.fastq.gz
+mv ERR2721183.fastq.gz Metagenomics2_2.fastq.gz
+mv ERR2721171.fastq.gz JL28_2.fastq.gz
+mv ERR2721188.fastq.gz JL27_1.fastq.gz
+mv ERR2721175.fastq.gz JL32_1.fastq.gz
+mv ERR2721176.fastq.gz JL29_1.fastq.gz
+mv ERR2721178.fastq.gz JL31_2.fastq.gz
+mv ERR2721180.fastq.gz Metagenomics4_1.fastq.gz
+mv ERR2721184.fastq.gz JL31_1.fastq.gz
+mv ERR2721187.fastq.gz JL32_2.fastq.gz
+mv ERR2721169.fastq.gz Metagenomics1_1.fastq.gz
+mv ERR2721170.fastq.gz JL28_1.fastq.gz
+mv ERR2721172.fastq.gz JL33_2.fastq.gz
+mv ERR2721173.fastq.gz JL30_1.fastq.gz
+mv ERR2721177.fastq.gz JL29_2.fastq.gz
+mv ERR2721181.fastq.gz JL30_2.fastq.gz
+mv ERR2721182.fastq.gz JL27_2.fastq.gz
+mv ERR2721185.fastq.gz Metagenomics2_1.fastq.gz
+mv ERR2721186.fastq.gz Metagenomics4_2.fastq.gz
+mv ERR2721189.fastq.gz Metagenomics3_2.fastq.gz
+
